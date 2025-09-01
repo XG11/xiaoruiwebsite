@@ -9,144 +9,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+      /* Optional light polish to ensure consistency even if stylesheet.css is minimal */
+      .container { max-width: 800px; margin: 0 auto; }
+      p { margin: 0 0 1em 0; }
+      h2 { margin: 0.2em 0 0.6em 0; }
+      .muted a { color: #666; text-decoration: none; }
+      .muted { color:#666; font-size:0.9em; text-align:center; padding:20px; }
+      /* Ensure hover video sits above the image */
+      .one { position: relative; }
+      .one .two { position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s; }
+      table { border:0; border-spacing:0; border-collapse:separate; width:100%; }
+    </style>
   </head>
 
   <body>
-    <!-- Top Card: Headshot left, text right -->
-    <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-      <tbody>
-        <tr style="padding:0;vertical-align:middle">
-          <!-- Headshot column -->
-          <td style="padding:2.5%;width:25%;max-width:180px;vertical-align:middle;text-align:center;">
-            <a href="images/XiaoruiGu.jpg">
-              <img src="images/XiaoruiGu.jpg"
-                  alt="Xiaorui Gu"
-                  style="width:150px;height:auto;border-radius:8px;display:block;margin:auto;">
-            </a>
-          </td>
+    <div class="container">
+      <!-- Top Card: Headshot left, text right -->
+      <table>
+        <tbody>
+          <tr style="padding:0;vertical-align:middle">
+            <!-- Headshot column -->
+            <td style="padding:2.5%;width:25%;max-width:180px;vertical-align:middle;text-align:center;">
+              <a href="images/XiaoruiGu.jpg">
+                <img src="images/XiaoruiGu.jpg"
+                     alt="Portrait of Xiaorui Gu"
+                     style="width:150px;height:auto;border-radius:8px;display:block;margin:auto;">
+              </a>
+            </td>
 
-          <!-- Info column -->
-          <td style="padding:2.5%;width:75%;vertical-align:middle">
-            <!-- Bigger name -->
-            <p class="name" style="font-size:2.2em;font-weight:bold;margin:0 0 10px 0;">
-              Xiaorui Gu
-            </p>
-            <p>
+            <!-- Info column -->
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <!-- Bigger name -->
+              <p class="name" style="font-size:2.2em;font-weight:bold;margin:0 0 10px 0;">
+                Xiaorui Gu
+              </p>
+              <p>
+                Hello! I’m currently an MS student in Electrical Engineering at Northwestern University.
+                Prior to this, I spent my undergraduate years in Urbana, IL, completing a BS in Mechanical Engineering
+                with an EE minor (Control Systems track) at the University of Illinois.
+              </p>
+              <p style="text-align:left;margin-top:10px;">
+                <a href="mailto:xiaoruigu2027@u.northwestern.edu">Email</a> &nbsp;/&nbsp;
+                <a href="assets/CV.pdf">CV</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/xiaoruigu/" target="_blank" rel="noopener">LinkedIn</a>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-              Hello! I’m currently an MS student in Electrical Engineering at Northwestern University. <br>
-              Prior to this, I spent my undergraduate years in Urbana, IL, where I completed my study in ME major + EE minor, Control Systems Track at the University of Illinois.
-            </p>
-            <p style="text-align:left;margin-top:10px;">
-              <a href="mailto:xiaoruigu2027@u.northwestern.edu">Email</a> &nbsp;/&nbsp;
-              <a href="assets/CV.pdf">CV</a> &nbsp;/&nbsp;
-              <a href="https://www.linkedin.com/in/xiaoruigu/">LinkedIn</a>
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <!-- Updates Section -->
+      <table>
+        <tbody>
+          <tr>
+            <td style="padding:16px;width:100%;vertical-align:middle">
+              <h2>Updates</h2>
+              <ul>
+                <li><b>09/01/2025:</b> Website in construction — I’m reformatting mostly.</li>
+                <li><b>05/16/2025:</b> I finished my undergraduate study at UIUC.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <!-- Updates Section -->
-    <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-      <tbody>
-        <tr>
-          <td style="padding:16px;width:100%;vertical-align:middle">
-            <h2>Updates</h2>
-            <ul>
-              <li><b>09/01/2025:</b> website in construction...I'm reformatting mostly</li>
-              <li><b>05/16/2025:</b> I finished my undergraduate study at UIUC.</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <!-- Research Paragraph -->
+      <table>
+        <tbody>
+          <tr>
+            <td style="padding:16px;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+              <p>
+                I am broadly interested in <em>robotics-related</em> topics (control, planning/learning, and perception),
+                supported by an academic background that combines mechanical, computer, and electrical engineering.
+                That being said, my focus area is <em>robotic perception</em>, especially tactile sensing
+                (with vision integration) for enhancing robotic dexterity and control under contact-rich tasks.
+              </p>
+              <p>
+                I’m currently developing a high-coverage, high-durability, and high-frequency tactile sensing skin for
+                humanoid robotic hands, under the guidance of Prof. J. Edward Colgate at the HAND ERC,
+                Center for Robotics and Biosystems, Northwestern University.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <!-- Research Paragraph -->
-    <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-      <tbody>
-        <tr>
-          <td style="padding:16px;width:100%;vertical-align:middle">
-            <h2>Research</h2>
-            <p>
-              I am broadly interested in robotic related topics (if you group such topics in Control, Planning/Learning, and Perception), as my academic background mixed mechanical, computer, and electrical engineering.
-              That being said, my focus area is robotic perception, especially tactile sensing (multimode with vision as well) for enhancing robotic dexterity and control under contact-rich tasks.<br>
-                <br>
-              Currently I'm working on developing a high-coverage, high-durability, and high-frequency tactile sensing skin for humanoid robotic hands, under the guidance of Prof. J. Edward Colgate at HAND ERC, Center for Robotics and Biosystems, Northwestern University.
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <!-- Publications Section -->
+      <table>
+        <tbody>
+          <tr>
+            <td style="padding:16px;width:100%;vertical-align:middle">
+              <h2>Publications</h2>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
+      <!-- Publications / Projects -->
+      <table style="border-spacing:0 10px;margin-top:-6px;">
+        <tbody>
+          <!-- Smart Mat Paper -->
+          <tr onmouseout="smartmat_stop()" onmouseover="smartmat_start()" bgcolor="#ffffd0">
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <!-- Hover video -->
+                <div class="two" id="smartmat_image">
+                  <video width="160" autoplay loop muted playsinline>
+                    <source src="images/smartmat.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <!-- Default thumbnail -->
+                <img src="images/smartmat.png" width="160" alt="Smart Mat thumbnail">
+              </div>
+              <script type="text/javascript">
+                function smartmat_start(){ document.getElementById('smartmat_image').style.opacity = "1"; }
+                function smartmat_stop(){  document.getElementById('smartmat_image').style.opacity = "0"; }
+                smartmat_stop();
+              </script>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://asmedigitalcollection.asme.org/BIOMED/proceedings/DMD2025/88735/V001T03A004/1218623" target="_blank" rel="noopener">
+                <span class="papertitle">Intelligent Square Stepping Exercise System for Cognitive-Motor Rehabilitation in Older Adults with Multiple Sclerosis</span>
+              </a>
+              <br>
+              <strong>Gu, X.</strong>, Gupta, P., Liu, J., Zhou, H., Cisto, B., Khan, M. A., Mason, S., Motl, R., Sebastiao, E., &amp; Hernandez, M. E.
+              <br>
+              <em>Design of Medical Devices Conference</em>, 2025
+              <br>
+              <p></p>
+              <p>
+                A piezoresistive pressure sensor array, achieving high sensitivity and portability for gait analysis and rehabilitation exercise.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-
-<!-- Publications Section -->
-<table style="width:100%;max-width:800px;border:0;border-spacing:0;margin:20px auto;">
-  <tbody>
-    <tr>
-      <td style="padding:16px;width:100%;vertical-align:middle">
-        <h2>Publications</h2>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- Publications / Projects -->
-<table style="width:100%;max-width:800px;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-  <tbody>
-
-    <!-- Smart Mat Paper -->
-    <tr onmouseout="smartmat_stop()" onmouseover="smartmat_start()" bgcolor="#ffffd0">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one" style="position:relative;">
-          <!-- Hover video -->
-          <div class="two" id="smartmat_image" style="position:absolute;top:0;left:0;opacity:0;transition:opacity 0.3s;">
-            <video width="160" autoplay loop muted playsinline>
-              <source src="images/smartmat.MP4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <!-- Default thumbnail -->
-          <img src="images/smartmat.png" width="160">
-        </div>
-        <script type="text/javascript">
-          function smartmat_start(){ document.getElementById('smartmat_image').style.opacity = "1"; }
-          function smartmat_stop(){  document.getElementById('smartmat_image').style.opacity = "0"; }
-          smartmat_stop();
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://asmedigitalcollection.asme.org/BIOMED/proceedings/DMD2025/88735/V001T03A004/1218623">
-          <span class="papertitle">Intelligent Square Stepping Exercise System for Cognitive-Motor Rehabilitation in Older Adults with Multiple Sclerosis</span>
-        </a>
-        <br>
-        <strong>Gu, X.</strong>, Gupta, P., Liu, J., Zhou, H., Cisto, B., Khan, M. A., Mason, S., Motl, R., Sebastiao, E., & Hernandez, M. E.
-        <br>
-        <em>Design of Medical Devices Conference</em>, 2025
-        <br>
-        <p></p>
-        <p>
-          A piezoresistive pressure sensor array, achieving high sensitivity and portability for gait analysis and rehabilitation exercise.
-        </p>
-      </td>
-    </tr>
-
-  </tbody>
-</table>
-
-    <!-- Footer -->
-    <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:30px auto 0 auto;">
-      <tbody>
-        <tr>
-          <td style="text-align:center;padding:20px;color:#666;font-size:0.9em;">
-            © 2025 Xiaorui Gu · Template from 
-            <a href="https://jonbarron.info" target="_blank" style="color:#666;text-decoration:none;">
-              jonbarron.info
-            </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
+      <!-- Footer -->
+      <table style="margin:30px 0 0 0;">
+        <tbody>
+          <tr>
+            <td class="muted">
+              © 2025 Xiaorui Gu · Template from
+              <a href="https://jonbarron.info" target="_blank" rel="noopener" class="muted">jonbarron.info</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
