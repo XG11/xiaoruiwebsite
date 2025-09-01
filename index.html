@@ -80,14 +80,49 @@
 
 
 
-    <!-- Publications / Projects commented out -->
-    <!--
-    <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-      <tbody>
-        ... your Smart Mat and Tactile Skin blocks here ...
-      </tbody>
-    </table>
-    -->
+<!-- Publications / Projects -->
+<table style="width:100%;max-width:800px;border:0;border-spacing:0 10px;border-collapse:separate;margin:20px auto;">
+  <tbody>
+
+    <!-- Smart Mat Paper -->
+    <tr onmouseout="smartmat_stop()" onmouseover="smartmat_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one" style="position:relative;">
+          <!-- Hover video -->
+          <div class="two" id="smartmat_image" style="position:absolute;top:0;left:0;opacity:0;transition:opacity 0.3s;">
+            <video width="160" autoplay loop muted playsinline>
+              <source src="images/smartmat.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <!-- Default thumbnail -->
+          <img src="images/smartmat.jpg" width="160">
+        </div>
+        <script type="text/javascript">
+          function smartmat_start(){ document.getElementById('smartmat_image').style.opacity = "1"; }
+          function smartmat_stop(){  document.getElementById('smartmat_image').style.opacity = "0"; }
+          smartmat_stop();
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://asmedigitalcollection.asme.org/BIOMED/proceedings/DMD2025/88735/V001T03A004/1218623">
+          <span class="papertitle">Smart Mat for Posture Tracking</span>
+        </a>
+        <br>
+        <strong>Gu, X.</strong>, Gupta, P., Liu, J., Zhou, H., Cisto, B., Khan, M. A., Mason, S., Motl, R., Sebastiao, E., & Hernandez, M. E.
+        <br>
+        <em>Design of Medical Devices Conference</em>, 2025
+        <br>
+        <a href="https://asmedigitalcollection.asme.org/BIOMED/proceedings/DMD2025/88735/V001T03A004/1218623">Link</a>
+        <p></p>
+        <p>
+          A piezoresistive pressure sensor array, achieving high sensitivity and portability for gait analysis and rehabilitation exercise.
+        </p>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
 
     <!-- Footer -->
     <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:30px auto 0 auto;">
