@@ -113,24 +113,33 @@
           <!-- Smart Mat Paper -->
           <tr onmouseover="smartmat_start()" onmouseout="smartmat_stop()" bgcolor="#ffffd0">
             <td style="padding:16px;width:20%;vertical-align:middle">
-              <!-- Fixed-size thumbnail box so it never overflows the yellow card -->
-              <div style="position:relative;width:160px;height:120px;overflow:hidden;border-radius:6px;">
-                <!-- Hover video (fills the box) -->
+              <!-- Fixed-size thumbnail box -->
+              <div id="smartmat_box" style="position:relative;width:160px;height:120px;overflow:hidden;border-radius:6px;">
+                <!-- Hover video -->
                 <video id="smartmat_video"
-                      autoplay loop muted playsinline
+                      autoplay muted loop playsinline preload="auto" poster="images/smartmat.png"
                       style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s;">
-                  <source src="images/smartmat.MP4" type="video/mp4">
+                  <source src="images/smartmat.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <!-- Default thumbnail (fills the box) -->
+                <!-- Default thumbnail -->
                 <img src="images/smartmat.png" alt="Smart Mat thumbnail"
                     style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;">
               </div>
 
               <script>
-                function smartmat_start(){ document.getElementById('smartmat_video').style.opacity = '1'; }
-                function smartmat_stop(){  document.getElementById('smartmat_video').style.opacity = '0'; }
-                smartmat_stop();
+                const smVid = document.getElementById('smartmat_video');
+                const smBox = document.getElementById('smartmat_box');
+
+                function smartmat_start() {
+                  smVid.style.opacity = '1';
+                  if (smVid.paused) { smVid.play().catch(()=>{}); }
+                }
+                function smartmat_stop() {
+                  smVid.style.opacity = '0';
+                }
+                // Mobile/touch: tap to reveal video
+                smBox.addEventListener('touchstart', () => { smartmat_start(); }, { passive: true });
               </script>
             </td>
 
@@ -150,6 +159,7 @@
           </tr>
         </tbody>
       </table>
+
 
 
       <!-- Footer -->
